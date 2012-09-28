@@ -3,6 +3,14 @@ Fader
 
 A simple fading slideshow jQuery plugin.
 
+About
+-----
+
+Fader is a lightweight jQuery plugin that allows you to turn a list of images into an infinite fading slideshow. Changeable options include speed and easing.
+
+Example
+-------
+
 ```html
 <ul style="position: relative; list-style: none; overflow: hidden;" data-role="fader">
     <li><img src="http://placekitten.com/500/300"></li>
@@ -18,6 +26,13 @@ A simple fading slideshow jQuery plugin.
         'easing' : 'linear'
     });
 </script>
+```
+
+Clone
+-----
+
+```
+$ git clone git@github.com:samhicks/fader.git
 ```
 
 @copyright [Sam Hicks][samhicks] 2012
