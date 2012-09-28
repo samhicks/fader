@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
   <head>
@@ -21,6 +22,8 @@
           <h1 id="project_title">Fader</h1>
           <h2 id="project_tagline">A simple fading slideshow jQuery plugin</h2>
 
+          <p><strong>Fader</strong> is a lightweight jQuery plugin that allows you to turn a list of images into an infinite fading slideshow. Changeable options include <em>speed</em> and <em>easing</em>.</p>
+
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/samhicks/fader/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/samhicks/fader/tarball/master">Download this project as a tar.gz file</a>
@@ -31,19 +34,20 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>Some stuff explaining about how to use the plugin</p>
+         
+        <ul class="fader" data-role="fader">
+            <li><img src="http://placekitten.com/500/300"></li>
+            <li><img src="http://placekitten.com/g/500/300"></li>
+        </ul>
 
-<p>And a working example</p>
+        <br/>
 
-<h3>Download</h3>
+        <h3>Download</h3>
 
-<p>You can download this project in either zip or tar formats, or clone the project with Git by running:</p>
+        <p>You can download this project in either <a href="https://github.com/samhicks/fader/zipball/master">zip</a> or <a href="https://github.com/samhicks/fader/tarball/master">tar</a> formats, or clone the project with Git by running:</p>
 
-<p><code>$ git clone git@github.com:samhicks/fader.git</code></p>
+        <pre>$ git clone git@github.com:samhicks/fader.git</pre>
 
-<p>Alternatively, you could add the library to your existing Git project by running:</p>
-
-<p>by Sam Hicks <a href="http://github.com/samhicks">http://github.com/samhicks</a></p>
       </section>
     </div>
 
@@ -55,7 +59,15 @@
       </footer>
     </div>
 
-    
+     <!-- SCRIPTS  -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://raw.github.com/samhicks/fader/master/lib/fader.js"></script>
+      <script type="text/javascript">
+            $('[data-role="fader"]').fader({
+                'speed' : 2000,
+                'easing' : 'linear'
+            });
+      </script>
 
   </body>
 </html>
